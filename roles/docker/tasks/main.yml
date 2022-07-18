@@ -1,0 +1,7 @@
+---
+# tasks file for docker
+- name: "Install Docker"
+  apt:
+    name: docker.io
+    state: present
+  become: true

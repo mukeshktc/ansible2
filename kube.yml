@@ -1,0 +1,14 @@
+# plays on kubernetes master
+
+- name: Installing Kubernetes
+  hosts: localhost
+  become: true
+  roles:
+  - roles/kubernetes
+
+# plays on worker nodes
+
+- name: join the node to cluster
+  hosts: localhost
+  roles:
+  - roles/kube-worker

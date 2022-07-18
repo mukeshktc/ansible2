@@ -1,0 +1,8 @@
+---
+# defaults file for kubernetes
+packages:
+- kubelet=1.20.2-00 
+- kubeadm=1.20.2-00 
+- kubectl=1.20.2-00
+
+ip_address: <ip-address>

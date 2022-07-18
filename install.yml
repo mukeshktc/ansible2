@@ -1,0 +1,7 @@
+- hosts: localhost
+  name: Installations
+  become: true
+  roles:
+  - roles/java
+  - roles/docker
+  - roles/jenkins
